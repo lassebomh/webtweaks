@@ -1,0 +1,18 @@
+{
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "name": "My extension",
+    "content_scripts": [
+        {
+            "matches": ["https://stackoverflow.com/*", "https://developer.mozilla.org/en-US/docs/*", "https://developer.chrome.com/docs/*"],
+            "css": ["style.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "template.html", "style.css" ],
+            "matches": [ "<all_urls>" ]
+        }
+    ]
+}
