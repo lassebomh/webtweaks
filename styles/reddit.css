@@ -2,7 +2,8 @@
 body { --z: 2147483648; opacity: 0; }
 
 #siteTable,
-.sitetable
+.sitetable,
+ul.tabmenu
 {
     z-index: var(--z) !important;
     position: relative;
@@ -15,4 +16,8 @@ div.thing.link:first-child:after,
 .commentarea>div.sitetable:before
 {
     display: none !important;
+}
+
+#header {
+    position: static !important;
 }

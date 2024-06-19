@@ -4,7 +4,16 @@
     "name": "Web Tweaks",
     "content_scripts": [
         {
-            "matches": ["https://stackoverflow.com/questions/*"],
+            "matches": ["<all_urls>"],
+            "run_at": "document_start",
+            "js": ["redirect.js"]
+        },
+        {
+            "matches": [
+                "https://stackoverflow.com/questions/*",
+                "https://superuser.com/questions/*",
+                "https://askubuntu.com/questions/*"
+            ],
             "css": ["styles/stackexchange.css"],
             "run_at": "document_start",
             "js": ["overlay.js"]
@@ -42,6 +51,12 @@
         {
             "matches": ["https://*.reddit.com/r/*"],
             "css": ["styles/reddit.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://*.quora.com/*"],
+            "css": ["styles/quora.css"],
             "run_at": "document_start",
             "js": ["overlay.js"]
         }

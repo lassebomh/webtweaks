@@ -15,7 +15,8 @@ body { --z: 2147483648; opacity: 0; }
 
 #sidebar,
 .ml12,
-#post-form
+#post-form,
+header.site-header
 {
     display: none;
 }
