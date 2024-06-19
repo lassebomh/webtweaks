@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.style.zIndex = '2147483646';
     overlay.style.opacity = '1';
     
-    let c = 0
-    document.body.onclick = () => { overlay.style.display = ['none', 'initial'][++c % 2]; }
+    // let c = 0
+    // document.body.onclick = () => { overlay.style.display = ['none', 'initial'][++c % 2]; }
 
     document.body.style.opacity = '1'
 })
