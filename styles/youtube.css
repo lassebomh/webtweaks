@@ -1,0 +1,15 @@
+
+body { --z: 2147483648; opacity: 0; }
+
+ytd-searchbox,
+ytd-search,
+#center
+{
+    z-index: var(--z) !important;
+    position: relative;
+}
+
+ytd-reel-shelf-renderer
+{
+    display: none !important;
+}

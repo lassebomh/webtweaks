@@ -1,0 +1,16 @@
+
+body { --z: 2147483648; opacity: 0; }
+
+#content,
+.toc-container,
+#sidebar-quicklinks,
+.sidebar-container
+{
+    z-index: var(--z) !important;
+    position: relative;
+}
+
+.top-banner,
+.article-actions-container {
+    display: none !important;
+}

@@ -1,0 +1,14 @@
+
+body { --z: 2147483648; opacity: 0; }
+
+devsite-book-nav,
+devsite-content,
+.devsite-sidebar
+{
+    z-index: var(--z) !important;
+    position: relative;
+}
+
+devsite-header .devsite-collapsible-section {
+    display: none;
+}

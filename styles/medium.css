@@ -1,0 +1,14 @@
+
+body { --z: 2147483648; opacity: 0; }
+
+section
+{
+    z-index: var(--z) !important;
+    position: relative;
+}
+
+.bu.ub.uc.be.xq,
+.uc.n.xr.xs.tg.xt.xu.xv.xw.xx.xy.xz.ya.yb.yc.ce.bm.pu.yd.ye.lc.yf.yg,
+.l.m.n.o.c {
+    display: none;
+}

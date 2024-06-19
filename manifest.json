@@ -1,18 +1,49 @@
 {
     "version": "0.1.0",
     "manifest_version": 3,
-    "name": "My extension",
+    "name": "Web Tweaks",
     "content_scripts": [
         {
-            "matches": ["https://stackoverflow.com/*", "https://developer.mozilla.org/en-US/docs/*", "https://developer.chrome.com/docs/*"],
-            "css": ["style.css"],
-            "js": ["content.js"]
-        }
-    ],
-    "web_accessible_resources": [
+            "matches": ["https://stackoverflow.com/questions/*"],
+            "css": ["styles/stackexchange.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
         {
-            "resources": [ "template.html", "style.css" ],
-            "matches": [ "<all_urls>" ]
+            "matches": ["https://developer.mozilla.org/en-US/docs/*"],
+            "css": ["styles/mdn.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://developer.chrome.com/docs/*"],
+            "css": ["styles/devgoogle.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://*.medium.com/*"],
+            "css": ["styles/medium.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://dev.to/*"],
+            "css": ["styles/devto.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://dev.to/*"],
+            "css": ["styles/devto.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://*.reddit.com/r/*"],
+            "css": ["styles/reddit.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
         }
     ]
 }

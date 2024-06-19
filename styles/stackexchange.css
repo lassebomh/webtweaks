@@ -1,0 +1,21 @@
+
+body { --z: 2147483648; opacity: 0; }
+
+#mainbar,
+#question-header,
+#question-header + *
+{
+    z-index: var(--z) !important;
+    position: relative;
+}
+
+#question-header + * {
+    border: none !important;
+}
+
+#sidebar,
+.ml12,
+#post-form
+{
+    display: none;
+}

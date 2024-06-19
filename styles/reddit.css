@@ -1,0 +1,18 @@
+
+body { --z: 2147483648; opacity: 0; }
+
+#siteTable,
+.sitetable
+{
+    z-index: var(--z) !important;
+    position: relative;
+}
+
+div.thing.link:first-child:after,
+.commentarea .panestack-title,
+.commentarea .menuarea,
+.infobar,
+.commentarea>div.sitetable:before
+{
+    display: none !important;
+}

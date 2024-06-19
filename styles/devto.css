@@ -1,0 +1,12 @@
+
+body { --z: 2147483648; opacity: 0; }
+
+#article-show-container
+{
+    z-index: var(--z) !important;
+    position: relative;
+}
+
+.crayons-layout__sidebar-right {
+    display: none;
+}
