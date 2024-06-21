@@ -3,7 +3,8 @@ body { --z: 2147483648; opacity: 0; }
 
 #siteTable,
 .sitetable,
-ul.tabmenu
+ul.tabmenu,
+#header-bottom-left
 {
     z-index: var(--z) !important;
     position: relative;
@@ -13,11 +14,28 @@ div.thing.link:first-child:after,
 .commentarea .panestack-title,
 .commentarea .menuarea,
 .infobar,
-.commentarea>div.sitetable:before
+.commentarea>div.sitetable:before,
+#sr-header-area,
+#header + .side
 {
     display: none !important;
 }
 
 #header {
     position: static !important;
+}
+
+div.content[role="main"] {
+    margin: auto;
+    margin-top: 1em;
+    max-width: 920px;
+}
+
+div.commentarea {
+    margin-top: 1em;
+    width: 100% !important;
+}
+
+#siteTable > :first-child {
+    margin-right: 0;
 }

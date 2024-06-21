@@ -13,10 +13,23 @@ body { --z: 2147483648; opacity: 0; }
     border: none !important;
 }
 
+#content {
+    max-width: 800px !important;
+    width: 800px !important;
+}
+
+#mainbar {
+    width: 100% !important;
+}
+
 #sidebar,
 .ml12,
 #post-form,
-header.site-header
+#left-sidebar,
+.js-vote-up-btn,
+.js-vote-down-btn,
+header.site-header,
+#footer
 {
-    display: none;
+    display: none !important;
 }

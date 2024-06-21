@@ -6,3 +6,15 @@ body { --z: 2147483648; opacity: 0; }
     z-index: var(--z) !important;
     position: relative;
 }
+
+#mainContent {
+    width: 100% !important;
+}
+
+#mainContent + div {
+    display: none;
+}
+
+*:has(> #mainContent) {
+    width: 720px !important;
+}

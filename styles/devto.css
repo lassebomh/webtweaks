@@ -7,6 +7,17 @@ body { --z: 2147483648; opacity: 0; }
     position: relative;
 }
 
-.crayons-layout__sidebar-right {
-    display: none;
+#page-content-inner > .crayons-layout {
+    grid-template-columns: 1fr;
+    max-width: 800px !important;
+}
+
+:root {
+  --content-font-size: 18px !important;
+  --content-padding-x: 32px !important;
+}
+
+.crayons-layout__sidebar-right,
+.crayons-layout__sidebar-left {
+    display: none !important;
 }
