@@ -1,5 +1,5 @@
 
-body { --z: 2147483648; opacity: 0; }
+body { --z: 2147483648; opacity: 0; --overlay-color: var(--devsite-body-background); }
 
 devsite-book-nav,
 devsite-content,

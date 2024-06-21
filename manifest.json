@@ -25,7 +25,7 @@
             "js": ["overlay.js"]
         },
         {
-            "matches": ["https://developer.chrome.com/docs/*"],
+            "matches": ["https://developer.chrome.com/docs/*", "https://web.dev/*"],
             "css": ["styles/devgoogle.css"],
             "run_at": "document_start",
             "js": ["overlay.js"]
@@ -57,6 +57,18 @@
         {
             "matches": ["https://*.quora.com/*"],
             "css": ["styles/quora.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://www.geeksforgeeks.org/*"],
+            "css": ["styles/geeksforgeeks.css"],
+            "run_at": "document_start",
+            "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://www.w3schools.com/*"],
+            "css": ["styles/w3schools.css"],
             "run_at": "document_start",
             "js": ["overlay.js"]
         },

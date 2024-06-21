@@ -55,18 +55,18 @@ document.addEventListener('keydown', (e) => {
 
     if (i != null && i > 0) {
         if (i != targets.length - 1) {
-            if (e.key == 'j') {
+            if (e.key == 'j' || e.key == 's') {
                 targets[i+1].focus();
                 setTargetIndex(i+1)
                 e.preventDefault();
             }
         }
-        if (e.key == 'k') {
+        if (e.key == 'k' || e.key == 'd') {
             setTargetIndex(i-1)
             targets[i-1].focus();
             e.preventDefault();
         }
-        if (e.key == 'l') {
+        if (e.key == 'l' || e.key == 'f') {
             targets[i].click();
             e.preventDefault();
         }

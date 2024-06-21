@@ -6,22 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     var overlay = document.getElementById("x-overlay")
     
-    if (window.location.hostname.indexOf("medium.com") === -1) {
-        let bgColor = document.body.computedStyleMap().get("background-color").toString();
-        if (bgColor.indexOf(', 0)') !== -1) {
-            bgColor = 'black'
-        }
-        overlay.style.backgroundColor = bgColor;
-    }
-
-
+    overlay.style.backgroundColor = document.body.style.backgroundColor ? document.body.style.backgroundColor : 'var(--overlay-color)'
     overlay.style.position = 'fixed';
     overlay.style.inset = '0';
     overlay.style.zIndex = '2147483646';
     overlay.style.opacity = '1';
     
-    // let c = 0
-    // document.body.onclick = () => { overlay.style.display = ['none', 'initial'][++c % 2]; }
+    let c = 0
+    document.body.onclick = () => { overlay.style.display = ['none', 'initial'][++c % 2]; }
 
     document.body.style.opacity = '1'
 })

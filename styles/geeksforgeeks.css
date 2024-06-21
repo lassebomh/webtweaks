@@ -1,0 +1,27 @@
+
+body { --z: 2147483648; opacity: 0; --overlay-color: var(--gfg-body-color-alternate)}
+
+article.content
+{
+    z-index: var(--z) !important;
+    position: relative !important;
+}
+
+.article-page_flex {
+    justify-content: center;
+}
+
+.leftBar {
+    max-width: 800px !important;
+    width: 800px !important;
+    min-width: 0 !important;
+}
+
+.sidebar_wrapper,
+.rightBar {
+    display: none !important;
+}
+
+.article--viewer {
+    position: initial !important;
+}
