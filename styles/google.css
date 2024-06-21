@@ -1,0 +1,14 @@
+.result:has(.focused) {
+    outline: 3px solid #03f3;
+    outline-offset: 6px;
+}
+
+
+
+:focus-visible, :focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}

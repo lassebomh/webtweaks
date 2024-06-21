@@ -59,6 +59,15 @@
             "css": ["styles/quora.css"],
             "run_at": "document_start",
             "js": ["overlay.js"]
+        },
+        {
+            "matches": ["https://*.google.com/search*"],
+            "js": ["google.js"],
+            "css": ["styles/google.css"]
+        },
+        {
+            "matches": ["<all_urls>"],
+            "js": ["controls.js"]
         }
     ]
 }
