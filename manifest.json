@@ -81,5 +81,11 @@
             "matches": ["<all_urls>"],
             "js": ["controls.js"]
         }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "lib/math-expression-evaluator.min.js"],
+            "matches": [ "<all_urls>" ]
+        }
     ]
 }

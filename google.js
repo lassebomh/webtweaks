@@ -5,8 +5,6 @@ for (const el of document.querySelectorAll('[tabindex], [role], a, button')) {
 
 const results = [...document.querySelectorAll("a:has(h3)")]
 
-
-
 results.forEach((el) => {
     el.parentElement.parentElement.parentElement.parentElement.parentElement.classList.add("result")
     el.addEventListener("focus", () => { el.classList.add("focused") }, true);
@@ -44,8 +42,7 @@ function setTargetIndex(i) {
         inline: 'center'
     });
 
-    first = false;
-    
+    first = false;   
 }
 
 document.addEventListener('keydown', (e) => {
@@ -71,11 +68,29 @@ document.addEventListener('keydown', (e) => {
             e.preventDefault();
         }
     }
-
-    // if (e.key == 'j' || e.key == 'k') {
-    //     const down = e.key == 'k';
-
-    // }
-    // console.log(e);
-    // console.log(document.activeElement);
 })
+
+async function extras() {
+
+    await import(chrome.runtime.getURL('lib/math-expression-evaluator.min.js'))
+    const mexp = new Mexp()
+    const query = (new URL(location.href).searchParams).get('q')
+    
+    try {
+        const result = mexp.eval(query)
+        console.log(result);
+        const topstuff = document.getElementById("topstuff")
+        const resultEl = document.createElement("div")
+        resultEl.classList.add("math-result")
+        resultEl.innerHTML = `
+            <div>${query}</div>
+            <div style="float: right;">
+                <span style="opacity: 0.5;"> = </span>${result}
+            </div>
+        `;
+        topstuff.appendChild(resultEl)
+    } catch {}
+
+}
+
+extras()

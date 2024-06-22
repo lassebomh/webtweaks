@@ -12,3 +12,17 @@
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
 }
+
+[aria-label="Search by voice"],
+[aria-label="Search by image"] {
+    display: none !important;
+}
+
+.math-result {
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: large;
+    display: flow-root;
+    margin-bottom: 2em;
+}
