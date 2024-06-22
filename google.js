@@ -53,19 +53,23 @@ document.addEventListener('keydown', (e) => {
     if (i != null && i > 0) {
         if (i != targets.length - 1) {
             if (e.key == 'j' || e.key == 's') {
+                e.preventDefault();
                 targets[i+1].focus();
                 setTargetIndex(i+1)
-                e.preventDefault();
             }
         }
         if (e.key == 'k' || e.key == 'd') {
             setTargetIndex(i-1)
-            targets[i-1].focus();
             e.preventDefault();
+            targets[i-1].focus();
         }
         if (e.key == 'l' || e.key == 'f') {
-            targets[i].click();
             e.preventDefault();
+            targets[i].click();
+        }
+        if (e.key == 'a' || e.key == 'h') {
+            e.preventDefault();
+            history.back();
         }
     }
 })
