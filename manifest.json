@@ -25,54 +25,6 @@
             "js": ["overlay.js"]
         },
         {
-            "matches": ["https://developer.chrome.com/docs/*", "https://web.dev/*"],
-            "css": ["styles/devgoogle.css"],
-            "run_at": "document_start",
-            "js": ["overlay.js"]
-        },
-        {
-            "matches": ["https://*.medium.com/*"],
-            "css": ["styles/medium.css"],
-            "run_at": "document_start",
-            "js": ["overlay.js"]
-        },
-        {
-            "matches": ["https://dev.to/*"],
-            "css": ["styles/devto.css"],
-            "run_at": "document_start",
-            "js": ["overlay.js"]
-        },
-        {
-            "matches": ["https://dev.to/*"],
-            "css": ["styles/devto.css"],
-            "run_at": "document_start",
-            "js": ["overlay.js"]
-        },
-        {
-            "matches": ["https://*.reddit.com/r/*"],
-            "css": ["styles/reddit.css"],
-            "run_at": "document_start",
-            "js": ["overlay.js"]
-        },
-        {
-            "matches": ["https://*.quora.com/*"],
-            "css": ["styles/quora.css"],
-            "run_at": "document_start",
-            "js": ["overlay.js"]
-        },
-        {
-            "matches": ["https://www.geeksforgeeks.org/*"],
-            "css": ["styles/geeksforgeeks.css"],
-            "run_at": "document_start",
-            "js": ["overlay.js"]
-        },
-        {
-            "matches": ["https://www.w3schools.com/*"],
-            "css": ["styles/w3schools.css"],
-            "run_at": "document_start",
-            "js": ["overlay.js"]
-        },
-        {
             "matches": ["https://*.google.com/search*"],
             "js": ["google.js"],
             "css": ["styles/google.css"]
