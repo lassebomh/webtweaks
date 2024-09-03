@@ -1,14 +1,9 @@
-
+/* 
 
 .grid.grid-cols-3.gap-6 * {
   white-space: normal !important;
 }
 
-/* .grid.grid-cols-3.gap-6 > :nth-child(2),
-.grid.grid-cols-3.gap-6 > :nth-child(3),
-.grid.grid-cols-3.gap-6 > :last-child {
-  display: initial !important;
-} */
 
 
 .grid.grid-cols-3.gap-6  {
@@ -16,7 +11,6 @@
   grid-template-rows: auto auto;
   gap: 0.5rem !important;
   padding: 0.5rem !important;
-  /* margin-right: 0.25rem !important; */
   background-color: #0001;
 
 }
@@ -57,4 +51,4 @@
 
 .text-2xl.md\:text-xl.text-text-primary.font-medium.md\:font-normal.mb-2\.5.md\:mb-4.pb-3.md\:p-0.border-b.md\:border-none.border-divider-main {
   display: none;
-}
+} */

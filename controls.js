@@ -5,6 +5,7 @@ if (window.location.host !== "localhost") {
 
     if (e.key == "j" || e.key == "k" || e.key == "s" || e.key == "d") {
       e.preventDefault();
+      e.stopPropagation();
       const direction = e.key == "j" || e.key == "s" ? 1 : -1;
       const distance = e.repeat ? 150 : 300;
       window.scrollBy({
@@ -13,9 +14,11 @@ if (window.location.host !== "localhost") {
       });
     } else if (e.key == "h" || e.key == "a") {
       e.preventDefault();
+      e.stopPropagation();
       history.back();
     } else if (e.key == "l" || e.key == "f") {
       e.preventDefault();
+      e.stopPropagation();
       history.forward();
     }
   });
